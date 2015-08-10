@@ -29,10 +29,11 @@ main{
 	position: relative;
 	z-index: 1;
 	margin: 0;
-	background-image: url(../img/Angkor-Wat.jpg);
+	background: url(../img/Royal_Palace,_Phnom_Penh_Cambodia_1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	background-image: no-repeat;
-	background-position: center;
 	color: white;
 	margin-bottom: 200px;
 
@@ -44,25 +45,41 @@ footer{
 	height: 200px;
 	width: 100%;
 	text-align: center;
-	background: #E8E8E8;
+	background-color: #F0F0F0;
 	color: #000;
 	position: fixed;
 	bottom: 0; left: 0;
 	.fa-linkedin-square{
 		color: #1582BB
 	}
+	a{
+		margin: 0 auto;
+		width: 10%;
+	}
 }
-#contact a h2{
-	display: flex;
-	align-items: center;
+#btn{
+	text-decoration: none;
+	color: grey;
+		text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+header{
+	background-color: #F0F0F0;
+	h3{
+		font-family: "lobster";
+		color: grey;
+		text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	}
+}
+#contact a h1{
 	color: white;
-	font-size: 40px;
-	font-family: sans-serif;
+	font-size: 50px;
+	font-family: "great vibes";
 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 #contact{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 0 20px;
 	 a{
 	 	text-decoration: none;
 	}
@@ -74,9 +91,11 @@ footer{
 	a{
 		display: flex;
 		text-align: center;
+		font-family: "dancing script";
 		text-decoration: none;
+		margin: 20px 0px 10px;
 		&:nth-of-type(2) div{
-				background: url(../img/img/girl.jpg) no-repeat;
+				background: url(../img/img/girl.jpg) no-repeat center;
 				background-size: cover;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
@@ -85,7 +104,7 @@ footer{
 				width: 350px;
 			}
 		div{
-			background: url("http://placehold.it/350x350") no-repeat;
+			background: url(../img/PicsArt_1438757351107.jpg) no-repeat center top;
 			background-size: cover;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
@@ -98,7 +117,7 @@ footer{
 				text-decoration: none;
 				color: white;
 				text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-				font-size: 30px;
+				font-size: 50px;
 				
 			}
 			
@@ -112,6 +131,9 @@ footer{
 #bottom{
 	display: flex;
 	justify-content: space-around;
+	font-family: "dancing script";
+	font-size: 50px;
+	margin: 10px 0px 20px;
 	a{
 		display: flex;
 		text-align: center;
@@ -141,7 +163,7 @@ footer{
 				text-decoration: none;
 				color: white;
 				text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-				font-size: 30px;
+				font-size: 50px;
 			}	
 		}
 	}
@@ -165,7 +187,174 @@ footer{
   margin: 0 auto;
 }
 .carousel{
-	background-color: #C0C0C0;
+	background-color: #E0E0E0;
 	padding-top: 40px;
 }
 
+// family
+
+section.family{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	div{
+		flex: 1;
+		// display: flex;
+		// flex-direction: column;
+		 text-align: center;
+		 &#dad{
+		 	position: relative;
+		 	flex: none;
+		 	background: url(../img/me.jpg) no-repeat center;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			height: 350px;
+			width: 350px;
+			border: 4px solid  #700000;
+			box-shadow: 10px 10px 7px black;
+			margin-bottom: 80px;
+			div{
+				position: absolute;
+				top: 100%;
+				left: 0;
+			}
+
+		 }
+		 &#mom{
+		 	position: relative;
+		 	flex: none;
+		 	background: url(../img/wifey.jpg) no-repeat center;
+			background-size: contain;
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-color: #F0F0F0;
+			height: 350px;
+			width: 350px;
+			border: 4px solid  #700000;
+			box-shadow: 10px 10px 7px black;
+			div{
+				position: absolute;
+				top: 100%;
+				left: 0;
+			}		 	
+		 }
+		img{
+		 border: 4px solid  #700000;
+		 box-shadow: 10px 10px 7px black;
+		 width: 350px;
+		 height: 350px;
+		}
+		h1 {
+			text-align: center;
+			font-family: "great vibes";
+			text-shadow: 1px 1px  #700000;
+		}
+	}
+}
+#parents{
+	margin-bottom: 100px;
+	margin-top: 70px;
+}
+#fam .carousel{
+	background-color: #700000;
+}
+#college{
+	height: 400px;
+	width: 900px;
+	margin: 0 auto;
+}
+#baby{
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+}
+#annika {
+	height: 400px;
+	width: auto;
+	margin: 0 auto;
+}
+#brandon {
+	height: 400px;
+	width: auto;
+	margin: 0 auto;
+}
+#papa{
+	height: 400px;
+	width: auto;
+	margin: 0 auto;
+}
+#newhead{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+	text-shadow: 1px 1px 2px black, 0 0 25px #700000, 0 0 5px #580000;
+	h1{
+		font-family: "great vibes";
+		font-size: 50px;
+		font-weight: 900;
+		
+		color: white;
+	}
+	h3{
+		text-shadow: 1px 1px 2px black, 0 0 25px #700000, 0 0 5px #580000;
+	}
+}
+
+#pageback1{
+	color: #700000;
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: silver;
+	margin-left: 20px;
+}
+
+// media queries
+@media (max-width: 750px) {
+	header h1{
+		text-align: center;
+	}
+	#top, #bottom {
+	   display: block;
+	    -webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	    justify-content: none;
+	    margin: 0;
+	    a div{
+	    	margin: 10px auto;
+	    	
+		}
+		.box-wrapper{
+			margin: 0;
+		}
+		
+	}
+	#bottom a div h1{
+		top: 0;
+	}
+}
+
+//aboutme
+#aboutme{
+	display: flex;
+	div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 50%;
+		margin: 0 auto;
+	}
+	img{
+		height: 500px;
+		width: 350px;
+		margin: 30px 0 30px;
+		border: 7px outset grey;
+		box-shadow: 10px 10px 7px red;
+	}	
+	p{
+		font-size: 16px;
+	}
+}
